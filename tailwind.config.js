@@ -3,7 +3,11 @@ module.exports = {
   content: ["./src/**/*.{html,js}", './public/index.html'],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        'custom': '100rem', // You can set this to any value you prefer
+      },
+    },
   },
   variants: {
     extend: {},
