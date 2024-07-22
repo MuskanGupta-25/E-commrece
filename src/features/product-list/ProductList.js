@@ -131,7 +131,7 @@ export default function ProductList() {
   }, [currentIndex]);
 
   return (
-    <div className="bg-white">      
+    <div className="bg-white/80">      
     <div className='w-full h-[900px] m-auto py-16 px-4 relative group'>
       <div 
       style={{backgroundImage:`url(${slides[currentIndex]})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'>
@@ -174,7 +174,7 @@ export default function ProductList() {
                 leaveFrom="translate-x-0"
                 leaveTo="translate-x-full"
               >
-                <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
+                <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white/80 py-4 pb-12 shadow-xl">
                   <div className="flex items-center justify-between px-4">
                     <h2 className="text-lg font-medium text-gray-900">
                       Filters
@@ -395,7 +395,7 @@ export default function ProductList() {
               {/* Product grid */}
               <div className="lg:col-span-3">
                 {/* This is our products list  */}
-                <div className="bg-white">
+                <div className="bg-white/80">
                   <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
                     <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
                       {products.map((product) => (
@@ -437,7 +437,7 @@ export default function ProductList() {
           </section>
 
           {/* section of product and filters ends */}
-          <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+          <div className="flex items-center justify-between border-t border-gray-200 bg-white/80 px-4 py-3 sm:px-6">
             <div className="flex flex-1 justify-between sm:hidden">
               <a
                 href="#"
